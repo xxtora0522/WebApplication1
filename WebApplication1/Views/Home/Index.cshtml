@@ -1,0 +1,12 @@
+﻿@using (Html.BeginForm("Login", "Users", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    // 아이디와 비밀번호 입력받는 라벨, input typue=text, password 부분 생략
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="로그인" class="btn btn-default" />
+        </div>
+    </div>
+}
